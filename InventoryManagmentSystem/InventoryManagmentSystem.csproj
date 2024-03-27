@@ -46,6 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmpDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmpDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpDBDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +121,28 @@
     <EmbeddedResource Include="Viewreports.resx">
       <DependentUpon>Viewreports.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="EmpDBDataSet.xsc">
+      <DependentUpon>EmpDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmpDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmpDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmpDBDataSet.xss">
+      <DependentUpon>EmpDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EmpDBDataSet1.xsc">
+      <DependentUpon>EmpDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="EmpDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmpDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EmpDBDataSet1.xss">
+      <DependentUpon>EmpDBDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
