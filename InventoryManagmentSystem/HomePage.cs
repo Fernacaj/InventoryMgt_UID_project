@@ -71,5 +71,17 @@ namespace InventoryManagmentSystem
         {
 
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            new AdhockReport().Show();
+            this.Hide();
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            new Approvals().Show();
+            this.Hide();
+        }
     }
 }

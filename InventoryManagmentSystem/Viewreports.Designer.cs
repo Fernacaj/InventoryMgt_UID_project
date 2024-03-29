@@ -30,12 +30,8 @@ namespace InventoryManagmentSystem
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Viewreports));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.empDBDataSet = new InventoryManagmentSystem.EmpDBDataSet();
-            this.empDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
-            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.reportIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.freuqencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,14 +40,18 @@ namespace InventoryManagmentSystem
             this.reporttypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.inventoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.empDBDataSet1 = new InventoryManagmentSystem.EmpDBDataSet1();
+            this.label4 = new System.Windows.Forms.Label();
+            this.empDBDataSet = new InventoryManagmentSystem.EmpDBDataSet();
+            this.empDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.inventoryTableAdapter = new InventoryManagmentSystem.EmpDBDataSet1TableAdapters.InventoryTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empDBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empDBDataSetBindingSource)).BeginInit();
-            this.fillByToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empDBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empDBDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -75,50 +75,9 @@ namespace InventoryManagmentSystem
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1203, 296);
+            this.dataGridView1.Size = new System.Drawing.Size(1051, 296);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label4.Location = new System.Drawing.Point(538, 28);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 28);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "View The  Reports";
-            // 
-            // empDBDataSet
-            // 
-            this.empDBDataSet.DataSetName = "EmpDBDataSet";
-            this.empDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // empDBDataSetBindingSource
-            // 
-            this.empDBDataSetBindingSource.DataSource = this.empDBDataSet;
-            this.empDBDataSetBindingSource.Position = 0;
-            // 
-            // fillByToolStrip
-            // 
-            this.fillByToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fillByToolStripButton});
-            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(1341, 27);
-            this.fillByToolStrip.TabIndex = 29;
-            this.fillByToolStrip.Text = "fillByToolStrip";
-            // 
-            // fillByToolStripButton
-            // 
-            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillByToolStripButton.Name = "fillByToolStripButton";
-            this.fillByToolStripButton.Size = new System.Drawing.Size(48, 24);
-            this.fillByToolStripButton.Text = "FillBy";
-            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
             // 
             // reportIdDataGridViewTextBoxColumn
             // 
@@ -184,18 +143,57 @@ namespace InventoryManagmentSystem
             this.empDBDataSet1.DataSetName = "EmpDBDataSet1";
             this.empDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label4.Location = new System.Drawing.Point(538, 28);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(184, 28);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "View The  Reports";
+            // 
+            // empDBDataSet
+            // 
+            this.empDBDataSet.DataSetName = "EmpDBDataSet";
+            this.empDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // empDBDataSetBindingSource
+            // 
+            this.empDBDataSetBindingSource.DataSource = this.empDBDataSet;
+            this.empDBDataSetBindingSource.Position = 0;
+            // 
             // inventoryTableAdapter
             // 
             this.inventoryTableAdapter.ClearBeforeFill = true;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Blue;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(619, 389);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 37);
             this.button1.TabIndex = 30;
             this.button1.Text = "DOWNLOAD";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Viewreports
             // 
@@ -203,20 +201,19 @@ namespace InventoryManagmentSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(1341, 737);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Viewreports";
             this.Text = "Viewreports";
             this.Load += new System.EventHandler(this.Viewreports_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empDBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empDBDataSetBindingSource)).EndInit();
-            this.fillByToolStrip.ResumeLayout(false);
-            this.fillByToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inventoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.empDBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empDBDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,8 +234,7 @@ namespace InventoryManagmentSystem
         private System.Windows.Forms.DataGridViewTextBoxColumn bownerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cartownerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn reporttypeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ToolStrip fillByToolStrip;
-        private System.Windows.Forms.ToolStripButton fillByToolStripButton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

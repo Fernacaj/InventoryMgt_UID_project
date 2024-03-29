@@ -29,6 +29,7 @@ namespace InventoryManagmentSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewRequest));
             this.titile = new System.Windows.Forms.TextBox();
             this.rtype = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,7 +46,8 @@ namespace InventoryManagmentSystem
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.exitt = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // titile
@@ -246,17 +248,18 @@ namespace InventoryManagmentSystem
             this.comboBox4.Size = new System.Drawing.Size(295, 36);
             this.comboBox4.TabIndex = 33;
             // 
-            // exitt
+            // pictureBox1
             // 
-            this.exitt.AutoSize = true;
-            this.exitt.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitt.ForeColor = System.Drawing.Color.Black;
-            this.exitt.Location = new System.Drawing.Point(1281, 9);
-            this.exitt.Name = "exitt";
-            this.exitt.Size = new System.Drawing.Size(48, 28);
-            this.exitt.TabIndex = 35;
-            this.exitt.Text = "Exit";
-            this.exitt.Click += new System.EventHandler(this.exitt_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(31, 33);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // NewRequest
             // 
@@ -264,7 +267,7 @@ namespace InventoryManagmentSystem
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(240)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(1341, 737);
-            this.Controls.Add(this.exitt);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.comboBox4);
             this.Controls.Add(this.label7);
@@ -285,6 +288,7 @@ namespace InventoryManagmentSystem
             this.Name = "NewRequest";
             this.Text = "NewRequest";
             this.Load += new System.EventHandler(this.NewRequest_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,6 +311,6 @@ namespace InventoryManagmentSystem
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label exitt;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

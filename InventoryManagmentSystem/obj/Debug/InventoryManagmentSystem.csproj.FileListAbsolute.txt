@@ -13,3 +13,5 @@ C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.NewRequest.resources
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.Modifyreport.resources
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.Viewreports.resources
+C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.AdhockReport.resources
+C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.Approvals.resources

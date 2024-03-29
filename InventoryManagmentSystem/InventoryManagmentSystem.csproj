@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdhockReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdhockReport.Designer.cs">
+      <DependentUpon>AdhockReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Approvals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Approvals.Designer.cs">
+      <DependentUpon>Approvals.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmpDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -94,6 +106,12 @@
     <Compile Include="Viewreports.Designer.cs">
       <DependentUpon>Viewreports.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdhockReport.resx">
+      <DependentUpon>AdhockReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approvals.resx">
+      <DependentUpon>Approvals.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
