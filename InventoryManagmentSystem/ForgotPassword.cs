@@ -57,7 +57,7 @@ namespace InventoryManagmentSystem
                             MessageBox.Show("Reset Password success", "Reset Password success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             // Create an instance of the HomePageForm
-                            Form1 F1 = new Form1();
+                            LoginPage F1 = new LoginPage();
 
                             // Show the home page form
                             F1.Show();

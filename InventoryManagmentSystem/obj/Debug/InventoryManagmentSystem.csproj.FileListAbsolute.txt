@@ -2,7 +2,6 @@ C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\bin\Debug\InventoryManagmentSystem.exe
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\bin\Debug\InventoryManagmentSystem.pdb
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.csproj.AssemblyReference.cache
-C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.Form1.resources
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.Properties.Resources.resources
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.csproj.GenerateResource.cache
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.csproj.CoreCompileInputs.cache
@@ -15,3 +14,4 @@ C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.Viewreports.resources
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.AdhockReport.resources
 C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.Approvals.resources
+C:\Users\Niraj\Desktop\UID LAB\InventoryManagmentSystem\InventoryManagmentSystem\obj\Debug\InventoryManagmentSystem.LoginPage.resources

@@ -13,10 +13,10 @@ using System.Text.RegularExpressions;
 
 namespace InventoryManagmentSystem
 {
-    public partial class Form1 : Form
+    public partial class LoginPage : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Niraj\Documents\EmpDB.mdf;Integrated Security=True;Connect Timeout=30");
-        public Form1()
+        public LoginPage()
         {
             InitializeComponent();
         }
@@ -106,6 +106,11 @@ namespace InventoryManagmentSystem
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Email_TextChanged(object sender, EventArgs e)
         {
 
         }

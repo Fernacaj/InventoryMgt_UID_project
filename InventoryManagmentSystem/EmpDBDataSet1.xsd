@@ -77,8 +77,8 @@ SELECT Report_Id, Title, Freuqency, B_owner, Cart_owner, Report_type FROM Invent
             <Mappings>
               <Mapping SourceColumn="Report_Id" DataSetColumn="Report_Id" />
               <Mapping SourceColumn="Title" DataSetColumn="Title" />
-              <Mapping SourceColumn="Freuqency" DataSetColumn="Freuqency" />
-              <Mapping SourceColumn="B_owner" DataSetColumn="B_owner" />
+              <Mapping SourceColumn="Freuqency" DataSetColumn="Frequency" />
+              <Mapping SourceColumn="B_owner" DataSetColumn="BU_Owner" />
               <Mapping SourceColumn="Cart_owner" DataSetColumn="Cart_owner" />
               <Mapping SourceColumn="Report_type" DataSetColumn="Report_type" />
             </Mappings>
@@ -101,7 +101,7 @@ SELECT Report_Id, Title, Freuqency, B_owner, Cart_owner, Report_type FROM Invent
   <xs:element name="EmpDBDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EmpDBDataSet1" msprop:Generator_UserDSName="EmpDBDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Inventory" msprop:Generator_TableClassName="InventoryDataTable" msprop:Generator_TableVarName="tableInventory" msprop:Generator_RowChangedName="InventoryRowChanged" msprop:Generator_TablePropName="Inventory" msprop:Generator_RowDeletingName="InventoryRowDeleting" msprop:Generator_RowChangingName="InventoryRowChanging" msprop:Generator_RowEvHandlerName="InventoryRowChangeEventHandler" msprop:Generator_RowDeletedName="InventoryRowDeleted" msprop:Generator_RowClassName="InventoryRow" msprop:Generator_UserTableName="Inventory" msprop:Generator_RowEvArgName="InventoryRowChangeEvent">
+        <xs:element name="Inventory" msprop:Generator_TableClassName="InventoryDataTable" msprop:Generator_TableVarName="tableInventory" msprop:Generator_TablePropName="Inventory" msprop:Generator_RowDeletingName="InventoryRowDeleting" msprop:Generator_RowChangingName="InventoryRowChanging" msprop:Generator_RowEvHandlerName="InventoryRowChangeEventHandler" msprop:Generator_RowDeletedName="InventoryRowDeleted" msprop:Generator_UserTableName="Inventory" msprop:Generator_RowChangedName="InventoryRowChanged" msprop:Generator_RowEvArgName="InventoryRowChangeEvent" msprop:Generator_RowClassName="InventoryRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Report_Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnReport_Id" msprop:Generator_ColumnPropNameInRow="Report_Id" msprop:Generator_ColumnPropNameInTable="Report_IdColumn" msprop:Generator_UserColumnName="Report_Id" type="xs:int" />
@@ -112,14 +112,14 @@ SELECT Report_Id, Title, Freuqency, B_owner, Cart_owner, Report_type FROM Invent
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Freuqency" msprop:Generator_ColumnVarNameInTable="columnFreuqency" msprop:Generator_ColumnPropNameInRow="Freuqency" msprop:Generator_ColumnPropNameInTable="FreuqencyColumn" msprop:Generator_UserColumnName="Freuqency" minOccurs="0">
+              <xs:element name="Frequency" msprop:Generator_ColumnVarNameInTable="columnFrequency" msprop:Generator_ColumnPropNameInRow="Frequency" msprop:Generator_ColumnPropNameInTable="FrequencyColumn" msprop:Generator_UserColumnName="Frequency" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="55" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="B_owner" msprop:Generator_ColumnVarNameInTable="columnB_owner" msprop:Generator_ColumnPropNameInRow="B_owner" msprop:Generator_ColumnPropNameInTable="B_ownerColumn" msprop:Generator_UserColumnName="B_owner" minOccurs="0">
+              <xs:element name="BU_Owner" msprop:Generator_ColumnVarNameInTable="columnBU_Owner" msprop:Generator_ColumnPropNameInRow="BU_Owner" msprop:Generator_ColumnPropNameInTable="BU_OwnerColumn" msprop:Generator_UserColumnName="BU_Owner" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />

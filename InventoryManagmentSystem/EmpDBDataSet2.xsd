@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmpDBDataSet2" targetNamespace="http://tempuri.org/EmpDBDataSet2.xsd" xmlns:mstns="http://tempuri.org/EmpDBDataSet2.xsd" xmlns="http://tempuri.org/EmpDBDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EmpDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EmpDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.InventoryManagmentSystem.Properties.Settings.GlobalReference.Default.EmpDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="empdataTableAdapter" GeneratorDataComponentClassName="empdataTableAdapter" Name="empdata" UserDataComponentName="empdataTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EmpDBConnectionString (Settings)" DbObjectName="dbo.empdata" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT emp_name FROM dbo.empdata</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="emp_name" DataSetColumn="emp_name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EmpDBDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EmpDBDataSet2" msprop:Generator_UserDSName="EmpDBDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="empdata" msprop:Generator_TableClassName="empdataDataTable" msprop:Generator_TableVarName="tableempdata" msprop:Generator_TablePropName="empdata" msprop:Generator_RowDeletingName="empdataRowDeleting" msprop:Generator_RowChangingName="empdataRowChanging" msprop:Generator_RowEvHandlerName="empdataRowChangeEventHandler" msprop:Generator_RowDeletedName="empdataRowDeleted" msprop:Generator_UserTableName="empdata" msprop:Generator_RowChangedName="empdataRowChanged" msprop:Generator_RowEvArgName="empdataRowChangeEvent" msprop:Generator_RowClassName="empdataRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="emp_name" msprop:Generator_ColumnVarNameInTable="columnemp_name" msprop:Generator_ColumnPropNameInRow="emp_name" msprop:Generator_ColumnPropNameInTable="emp_nameColumn" msprop:Generator_UserColumnName="emp_name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

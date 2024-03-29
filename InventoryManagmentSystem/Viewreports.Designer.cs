@@ -34,7 +34,7 @@ namespace InventoryManagmentSystem
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.reportIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.freuqencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.frequencyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bownerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cartownerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.reporttypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,7 +65,7 @@ namespace InventoryManagmentSystem
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.reportIdDataGridViewTextBoxColumn,
             this.titleDataGridViewTextBoxColumn,
-            this.freuqencyDataGridViewTextBoxColumn,
+            this.frequencyDataGridViewTextBoxColumn,
             this.bownerDataGridViewTextBoxColumn,
             this.cartownerDataGridViewTextBoxColumn,
             this.reporttypeDataGridViewTextBoxColumn});
@@ -97,14 +97,14 @@ namespace InventoryManagmentSystem
             this.titleDataGridViewTextBoxColumn.ReadOnly = true;
             this.titleDataGridViewTextBoxColumn.Width = 125;
             // 
-            // freuqencyDataGridViewTextBoxColumn
+            // frequencyDataGridViewTextBoxColumn
             // 
-            this.freuqencyDataGridViewTextBoxColumn.DataPropertyName = "Freuqency";
-            this.freuqencyDataGridViewTextBoxColumn.HeaderText = "Freuqency";
-            this.freuqencyDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.freuqencyDataGridViewTextBoxColumn.Name = "freuqencyDataGridViewTextBoxColumn";
-            this.freuqencyDataGridViewTextBoxColumn.ReadOnly = true;
-            this.freuqencyDataGridViewTextBoxColumn.Width = 125;
+            this.frequencyDataGridViewTextBoxColumn.DataPropertyName = "frequency";
+            this.frequencyDataGridViewTextBoxColumn.HeaderText = "frequency";
+            this.frequencyDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.frequencyDataGridViewTextBoxColumn.Name = "frequencyDataGridViewTextBoxColumn";
+            this.frequencyDataGridViewTextBoxColumn.ReadOnly = true;
+            this.frequencyDataGridViewTextBoxColumn.Width = 125;
             // 
             // bownerDataGridViewTextBoxColumn
             // 
@@ -230,7 +230,7 @@ namespace InventoryManagmentSystem
         private EmpDBDataSet1TableAdapters.InventoryTableAdapter inventoryTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn reportIdDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn titleDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn freuqencyDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn frequencyDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bownerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cartownerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn reporttypeDataGridViewTextBoxColumn;

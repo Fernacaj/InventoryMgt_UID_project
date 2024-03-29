@@ -76,9 +76,10 @@ namespace InventoryManagmentSystem
             this.label7.ForeColor = System.Drawing.Color.AliceBlue;
             this.label7.Location = new System.Drawing.Point(26, 56);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(216, 32);
+            this.label7.Size = new System.Drawing.Size(141, 32);
             this.label7.TabIndex = 16;
-            this.label7.Text = "Raise New Report";
+            this.label7.Text = "WELCOME!";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // pictureBox3
             // 

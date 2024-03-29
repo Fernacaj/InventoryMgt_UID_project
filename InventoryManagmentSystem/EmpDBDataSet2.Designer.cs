@@ -20,17 +20,17 @@ namespace InventoryManagmentSystem {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("EmpDBDataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("EmpDBDataSet2")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class EmpDBDataSet1 : global::System.Data.DataSet {
+    public partial class EmpDBDataSet2 : global::System.Data.DataSet {
         
-        private InventoryDataTable tableInventory;
+        private empdataDataTable tableempdata;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public EmpDBDataSet1() {
+        public EmpDBDataSet2() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace InventoryManagmentSystem {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected EmpDBDataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected EmpDBDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace InventoryManagmentSystem {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Inventory"] != null)) {
-                    base.Tables.Add(new InventoryDataTable(ds.Tables["Inventory"]));
+                if ((ds.Tables["empdata"] != null)) {
+                    base.Tables.Add(new empdataDataTable(ds.Tables["empdata"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace InventoryManagmentSystem {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public InventoryDataTable Inventory {
+        public empdataDataTable empdata {
             get {
-                return this.tableInventory;
+                return this.tableempdata;
             }
         }
         
@@ -127,7 +127,7 @@ namespace InventoryManagmentSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            EmpDBDataSet1 cln = ((EmpDBDataSet1)(base.Clone()));
+            EmpDBDataSet2 cln = ((EmpDBDataSet2)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace InventoryManagmentSystem {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Inventory"] != null)) {
-                    base.Tables.Add(new InventoryDataTable(ds.Tables["Inventory"]));
+                if ((ds.Tables["empdata"] != null)) {
+                    base.Tables.Add(new empdataDataTable(ds.Tables["empdata"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace InventoryManagmentSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableInventory = ((InventoryDataTable)(base.Tables["Inventory"]));
+            this.tableempdata = ((empdataDataTable)(base.Tables["empdata"]));
             if ((initTable == true)) {
-                if ((this.tableInventory != null)) {
-                    this.tableInventory.InitVars();
+                if ((this.tableempdata != null)) {
+                    this.tableempdata.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace InventoryManagmentSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "EmpDBDataSet1";
+            this.DataSetName = "EmpDBDataSet2";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/EmpDBDataSet1.xsd";
+            this.Namespace = "http://tempuri.org/EmpDBDataSet2.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableInventory = new InventoryDataTable();
-            base.Tables.Add(this.tableInventory);
+            this.tableempdata = new empdataDataTable();
+            base.Tables.Add(this.tableempdata);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeInventory() {
+        private bool ShouldSerializeempdata() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace InventoryManagmentSystem {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            EmpDBDataSet1 ds = new EmpDBDataSet1();
+            EmpDBDataSet2 ds = new EmpDBDataSet2();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,31 +270,21 @@ namespace InventoryManagmentSystem {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void InventoryRowChangeEventHandler(object sender, InventoryRowChangeEvent e);
+        public delegate void empdataRowChangeEventHandler(object sender, empdataRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class InventoryDataTable : global::System.Data.TypedTableBase<InventoryRow> {
+        public partial class empdataDataTable : global::System.Data.TypedTableBase<empdataRow> {
             
-            private global::System.Data.DataColumn columnReport_Id;
-            
-            private global::System.Data.DataColumn columnTitle;
-            
-            private global::System.Data.DataColumn columnFrequency;
-            
-            private global::System.Data.DataColumn columnBU_Owner;
-            
-            private global::System.Data.DataColumn columnCart_owner;
-            
-            private global::System.Data.DataColumn columnReport_type;
+            private global::System.Data.DataColumn columnemp_name;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public InventoryDataTable() {
-                this.TableName = "Inventory";
+            public empdataDataTable() {
+                this.TableName = "empdata";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -302,7 +292,7 @@ namespace InventoryManagmentSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal InventoryDataTable(global::System.Data.DataTable table) {
+            internal empdataDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -319,56 +309,16 @@ namespace InventoryManagmentSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected InventoryDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected empdataDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Report_IdColumn {
+            public global::System.Data.DataColumn emp_nameColumn {
                 get {
-                    return this.columnReport_Id;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn TitleColumn {
-                get {
-                    return this.columnTitle;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn FrequencyColumn {
-                get {
-                    return this.columnFrequency;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn BU_OwnerColumn {
-                get {
-                    return this.columnBU_Owner;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Cart_ownerColumn {
-                get {
-                    return this.columnCart_owner;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Report_typeColumn {
-                get {
-                    return this.columnReport_type;
+                    return this.columnemp_name;
                 }
             }
             
@@ -383,57 +333,45 @@ namespace InventoryManagmentSystem {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public InventoryRow this[int index] {
+            public empdataRow this[int index] {
                 get {
-                    return ((InventoryRow)(this.Rows[index]));
+                    return ((empdataRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event InventoryRowChangeEventHandler InventoryRowChanging;
+            public event empdataRowChangeEventHandler empdataRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event InventoryRowChangeEventHandler InventoryRowChanged;
+            public event empdataRowChangeEventHandler empdataRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event InventoryRowChangeEventHandler InventoryRowDeleting;
+            public event empdataRowChangeEventHandler empdataRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event InventoryRowChangeEventHandler InventoryRowDeleted;
+            public event empdataRowChangeEventHandler empdataRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddInventoryRow(InventoryRow row) {
+            public void AddempdataRow(empdataRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public InventoryRow AddInventoryRow(string Title, string Frequency, string BU_Owner, string Cart_owner, string Report_type) {
-                InventoryRow rowInventoryRow = ((InventoryRow)(this.NewRow()));
+            public empdataRow AddempdataRow(string emp_name) {
+                empdataRow rowempdataRow = ((empdataRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
-                        Title,
-                        Frequency,
-                        BU_Owner,
-                        Cart_owner,
-                        Report_type};
-                rowInventoryRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowInventoryRow);
-                return rowInventoryRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public InventoryRow FindByReport_Id(int Report_Id) {
-                return ((InventoryRow)(this.Rows.Find(new object[] {
-                            Report_Id})));
+                        emp_name};
+                rowempdataRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowempdataRow);
+                return rowempdataRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                InventoryDataTable cln = ((InventoryDataTable)(base.Clone()));
+                empdataDataTable cln = ((empdataDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -441,74 +379,47 @@ namespace InventoryManagmentSystem {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new InventoryDataTable();
+                return new empdataDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columnReport_Id = base.Columns["Report_Id"];
-                this.columnTitle = base.Columns["Title"];
-                this.columnFrequency = base.Columns["Frequency"];
-                this.columnBU_Owner = base.Columns["BU_Owner"];
-                this.columnCart_owner = base.Columns["Cart_owner"];
-                this.columnReport_type = base.Columns["Report_type"];
+                this.columnemp_name = base.Columns["emp_name"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columnReport_Id = new global::System.Data.DataColumn("Report_Id", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnReport_Id);
-                this.columnTitle = new global::System.Data.DataColumn("Title", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTitle);
-                this.columnFrequency = new global::System.Data.DataColumn("Frequency", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFrequency);
-                this.columnBU_Owner = new global::System.Data.DataColumn("BU_Owner", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnBU_Owner);
-                this.columnCart_owner = new global::System.Data.DataColumn("Cart_owner", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCart_owner);
-                this.columnReport_type = new global::System.Data.DataColumn("Report_type", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnReport_type);
-                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this.columnReport_Id}, true));
-                this.columnReport_Id.AutoIncrement = true;
-                this.columnReport_Id.AutoIncrementSeed = -1;
-                this.columnReport_Id.AutoIncrementStep = -1;
-                this.columnReport_Id.AllowDBNull = false;
-                this.columnReport_Id.ReadOnly = true;
-                this.columnReport_Id.Unique = true;
-                this.columnTitle.MaxLength = 50;
-                this.columnFrequency.MaxLength = 55;
-                this.columnBU_Owner.MaxLength = 50;
-                this.columnCart_owner.MaxLength = 50;
-                this.columnReport_type.MaxLength = 50;
+                this.columnemp_name = new global::System.Data.DataColumn("emp_name", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnemp_name);
+                this.columnemp_name.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public InventoryRow NewInventoryRow() {
-                return ((InventoryRow)(this.NewRow()));
+            public empdataRow NewempdataRow() {
+                return ((empdataRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new InventoryRow(builder);
+                return new empdataRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(InventoryRow);
+                return typeof(empdataRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.InventoryRowChanged != null)) {
-                    this.InventoryRowChanged(this, new InventoryRowChangeEvent(((InventoryRow)(e.Row)), e.Action));
+                if ((this.empdataRowChanged != null)) {
+                    this.empdataRowChanged(this, new empdataRowChangeEvent(((empdataRow)(e.Row)), e.Action));
                 }
             }
             
@@ -516,8 +427,8 @@ namespace InventoryManagmentSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.InventoryRowChanging != null)) {
-                    this.InventoryRowChanging(this, new InventoryRowChangeEvent(((InventoryRow)(e.Row)), e.Action));
+                if ((this.empdataRowChanging != null)) {
+                    this.empdataRowChanging(this, new empdataRowChangeEvent(((empdataRow)(e.Row)), e.Action));
                 }
             }
             
@@ -525,8 +436,8 @@ namespace InventoryManagmentSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.InventoryRowDeleted != null)) {
-                    this.InventoryRowDeleted(this, new InventoryRowChangeEvent(((InventoryRow)(e.Row)), e.Action));
+                if ((this.empdataRowDeleted != null)) {
+                    this.empdataRowDeleted(this, new empdataRowChangeEvent(((empdataRow)(e.Row)), e.Action));
                 }
             }
             
@@ -534,14 +445,14 @@ namespace InventoryManagmentSystem {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.InventoryRowDeleting != null)) {
-                    this.InventoryRowDeleting(this, new InventoryRowChangeEvent(((InventoryRow)(e.Row)), e.Action));
+                if ((this.empdataRowDeleting != null)) {
+                    this.empdataRowDeleting(this, new empdataRowChangeEvent(((empdataRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveInventoryRow(InventoryRow row) {
+            public void RemoveempdataRow(empdataRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -550,7 +461,7 @@ namespace InventoryManagmentSystem {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                EmpDBDataSet1 ds = new EmpDBDataSet1();
+                EmpDBDataSet2 ds = new EmpDBDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -568,7 +479,7 @@ namespace InventoryManagmentSystem {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "InventoryDataTable";
+                attribute2.FixedValue = "empdataDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -612,166 +523,43 @@ namespace InventoryManagmentSystem {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class InventoryRow : global::System.Data.DataRow {
+        public partial class empdataRow : global::System.Data.DataRow {
             
-            private InventoryDataTable tableInventory;
+            private empdataDataTable tableempdata;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal InventoryRow(global::System.Data.DataRowBuilder rb) : 
+            internal empdataRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableInventory = ((InventoryDataTable)(this.Table));
+                this.tableempdata = ((empdataDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Report_Id {
-                get {
-                    return ((int)(this[this.tableInventory.Report_IdColumn]));
-                }
-                set {
-                    this[this.tableInventory.Report_IdColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Title {
+            public string emp_name {
                 get {
                     try {
-                        return ((string)(this[this.tableInventory.TitleColumn]));
+                        return ((string)(this[this.tableempdata.emp_nameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Title\' in table \'Inventory\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'emp_name\' in table \'empdata\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableInventory.TitleColumn] = value;
+                    this[this.tableempdata.emp_nameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Frequency {
-                get {
-                    try {
-                        return ((string)(this[this.tableInventory.FrequencyColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Frequency\' in table \'Inventory\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableInventory.FrequencyColumn] = value;
-                }
+            public bool Isemp_nameNull() {
+                return this.IsNull(this.tableempdata.emp_nameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string BU_Owner {
-                get {
-                    try {
-                        return ((string)(this[this.tableInventory.BU_OwnerColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'BU_Owner\' in table \'Inventory\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableInventory.BU_OwnerColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Cart_owner {
-                get {
-                    try {
-                        return ((string)(this[this.tableInventory.Cart_ownerColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Cart_owner\' in table \'Inventory\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableInventory.Cart_ownerColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Report_type {
-                get {
-                    try {
-                        return ((string)(this[this.tableInventory.Report_typeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Report_type\' in table \'Inventory\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableInventory.Report_typeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsTitleNull() {
-                return this.IsNull(this.tableInventory.TitleColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetTitleNull() {
-                this[this.tableInventory.TitleColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsFrequencyNull() {
-                return this.IsNull(this.tableInventory.FrequencyColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetFrequencyNull() {
-                this[this.tableInventory.FrequencyColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsBU_OwnerNull() {
-                return this.IsNull(this.tableInventory.BU_OwnerColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetBU_OwnerNull() {
-                this[this.tableInventory.BU_OwnerColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsCart_ownerNull() {
-                return this.IsNull(this.tableInventory.Cart_ownerColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetCart_ownerNull() {
-                this[this.tableInventory.Cart_ownerColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsReport_typeNull() {
-                return this.IsNull(this.tableInventory.Report_typeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetReport_typeNull() {
-                this[this.tableInventory.Report_typeColumn] = global::System.Convert.DBNull;
+            public void Setemp_nameNull() {
+                this[this.tableempdata.emp_nameColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -779,22 +567,22 @@ namespace InventoryManagmentSystem {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class InventoryRowChangeEvent : global::System.EventArgs {
+        public class empdataRowChangeEvent : global::System.EventArgs {
             
-            private InventoryRow eventRow;
+            private empdataRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public InventoryRowChangeEvent(InventoryRow row, global::System.Data.DataRowAction action) {
+            public empdataRowChangeEvent(empdataRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public InventoryRow Row {
+            public empdataRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -810,7 +598,7 @@ namespace InventoryManagmentSystem {
         }
     }
 }
-namespace InventoryManagmentSystem.EmpDBDataSet1TableAdapters {
+namespace InventoryManagmentSystem.EmpDBDataSet2TableAdapters {
     
     
     /// <summary>
@@ -822,7 +610,7 @@ namespace InventoryManagmentSystem.EmpDBDataSet1TableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class InventoryTableAdapter : global::System.ComponentModel.Component {
+    public partial class empdataTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -836,7 +624,7 @@ namespace InventoryManagmentSystem.EmpDBDataSet1TableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public InventoryTableAdapter() {
+        public empdataTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -933,61 +721,9 @@ namespace InventoryManagmentSystem.EmpDBDataSet1TableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Inventory";
-            tableMapping.ColumnMappings.Add("Report_Id", "Report_Id");
-            tableMapping.ColumnMappings.Add("Title", "Title");
-            tableMapping.ColumnMappings.Add("frequency", "Frequency");
-            tableMapping.ColumnMappings.Add("BU_Owner", "BU_Owner");
-            tableMapping.ColumnMappings.Add("Cart_owner", "Cart_owner");
-            tableMapping.ColumnMappings.Add("Report_type", "Report_type");
+            tableMapping.DataSetTable = "empdata";
+            tableMapping.ColumnMappings.Add("emp_name", "emp_name");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[Inventory] WHERE (([Report_Id] = @Original_Report_Id) AND ((@IsNull_Title = 1 AND [Title] IS NULL) OR ([Title] = @Original_Title)) AND ((@IsNull_frequency = 1 AND [frequency] IS NULL) OR ([frequency] = @Original_frequency)) AND ((@IsNull_BU_Owner = 1 AND [BU_Owner] IS NULL) OR ([BU_Owner] = @Original_BU_Owner)) AND ((@IsNull_Cart_owner = 1 AND [Cart_owner] IS NULL) OR ([Cart_owner] = @Original_Cart_owner)) AND ((@IsNull_Report_type = 1 AND [Report_type] IS NULL) OR ([Report_type] = @Original_Report_type)))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Report_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Report_Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Title", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Title", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Title", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Title", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_frequency", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "frequency", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_frequency", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "frequency", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_BU_Owner", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BU_Owner", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BU_Owner", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BU_Owner", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Cart_owner", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cart_owner", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cart_owner", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cart_owner", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Report_type", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Report_type", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Report_type", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Report_type", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[Inventory] ([Title], [frequency], [BU_Owner], [Cart_owner], [Report_type]) VALUES (@Title, @frequency, @BU_Owner, @Cart_owner, @Report_type);
-SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inventory WHERE (Report_Id = SCOPE_IDENTITY())";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Title", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@frequency", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "frequency", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BU_Owner", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BU_Owner", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cart_owner", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cart_owner", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Report_type", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Report_type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[Inventory] SET [Title] = @Title, [frequency] = @frequency, [BU_Owner] = @BU_Owner, [Cart_owner] = @Cart_owner, [Report_type] = @Report_type WHERE (([Report_Id] = @Original_Report_Id) AND ((@IsNull_Title = 1 AND [Title] IS NULL) OR ([Title] = @Original_Title)) AND ((@IsNull_frequency = 1 AND [frequency] IS NULL) OR ([frequency] = @Original_frequency)) AND ((@IsNull_BU_Owner = 1 AND [BU_Owner] IS NULL) OR ([BU_Owner] = @Original_BU_Owner)) AND ((@IsNull_Cart_owner = 1 AND [Cart_owner] IS NULL) OR ([Cart_owner] = @Original_Cart_owner)) AND ((@IsNull_Report_type = 1 AND [Report_type] IS NULL) OR ([Report_type] = @Original_Report_type)));
-SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inventory WHERE (Report_Id = @Report_Id)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Title", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Title", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@frequency", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "frequency", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BU_Owner", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BU_Owner", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cart_owner", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cart_owner", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Report_type", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Report_type", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Report_Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Report_Id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Title", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Title", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Title", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Title", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_frequency", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "frequency", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_frequency", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "frequency", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_BU_Owner", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BU_Owner", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BU_Owner", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BU_Owner", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Cart_owner", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cart_owner", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Cart_owner", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Cart_owner", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_Report_type", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Report_type", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Report_type", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Report_type", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Report_Id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Report_Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1000,24 +736,18 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM dbo.Inv" +
-                "entory";
+            this._commandCollection[0].CommandText = "SELECT emp_name FROM dbo.empdata";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
-            this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM dbo.Inv" +
-                "entory";
-            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(EmpDBDataSet1.InventoryDataTable dataTable) {
+        public virtual int Fill(EmpDBDataSet2.empdataDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1030,267 +760,11 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual EmpDBDataSet1.InventoryDataTable GetData() {
+        public virtual EmpDBDataSet2.empdataDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            EmpDBDataSet1.InventoryDataTable dataTable = new EmpDBDataSet1.InventoryDataTable();
+            EmpDBDataSet2.empdataDataTable dataTable = new EmpDBDataSet2.empdataDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy(EmpDBDataSet1.InventoryDataTable dataTable) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(EmpDBDataSet1.InventoryDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(EmpDBDataSet1 dataSet) {
-            return this.Adapter.Update(dataSet, "Inventory");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_Report_Id, string Original_Title, string Original_frequency, string Original_BU_Owner, string Original_Cart_owner, string Original_Report_type) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_Report_Id));
-            if ((Original_Title == null)) {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Title));
-            }
-            if ((Original_frequency == null)) {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_frequency));
-            }
-            if ((Original_BU_Owner == null)) {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_BU_Owner));
-            }
-            if ((Original_Cart_owner == null)) {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_Cart_owner));
-            }
-            if ((Original_Report_type == null)) {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_Report_type));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Title, string frequency, string BU_Owner, string Cart_owner, string Report_type) {
-            if ((Title == null)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Title));
-            }
-            if ((frequency == null)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(frequency));
-            }
-            if ((BU_Owner == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(BU_Owner));
-            }
-            if ((Cart_owner == null)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Cart_owner));
-            }
-            if ((Report_type == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Report_type));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Title, string frequency, string BU_Owner, string Cart_owner, string Report_type, int Original_Report_Id, string Original_Title, string Original_frequency, string Original_BU_Owner, string Original_Cart_owner, string Original_Report_type, int Report_Id) {
-            if ((Title == null)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Title));
-            }
-            if ((frequency == null)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(frequency));
-            }
-            if ((BU_Owner == null)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(BU_Owner));
-            }
-            if ((Cart_owner == null)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(Cart_owner));
-            }
-            if ((Report_type == null)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(Report_type));
-            }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_Report_Id));
-            if ((Original_Title == null)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_Title));
-            }
-            if ((Original_frequency == null)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_frequency));
-            }
-            if ((Original_BU_Owner == null)) {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_BU_Owner));
-            }
-            if ((Original_Cart_owner == null)) {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((string)(Original_Cart_owner));
-            }
-            if ((Original_Report_type == null)) {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_Report_type));
-            }
-            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(Report_Id));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Title, string frequency, string BU_Owner, string Cart_owner, string Report_type, int Original_Report_Id, string Original_Title, string Original_frequency, string Original_BU_Owner, string Original_Cart_owner, string Original_Report_type) {
-            return this.Update(Title, frequency, BU_Owner, Cart_owner, Report_type, Original_Report_Id, Original_Title, Original_frequency, Original_BU_Owner, Original_Cart_owner, Original_Report_type, Original_Report_Id);
         }
     }
     
@@ -1306,8 +780,6 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
         
         private UpdateOrderOption _updateOrder;
         
-        private InventoryTableAdapter _inventoryTableAdapter;
-        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -1320,20 +792,6 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
             }
             set {
                 this._updateOrder = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
-        public InventoryTableAdapter InventoryTableAdapter {
-            get {
-                return this._inventoryTableAdapter;
-            }
-            set {
-                this._inventoryTableAdapter = value;
             }
         }
         
@@ -1356,10 +814,6 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._inventoryTableAdapter != null) 
-                            && (this._inventoryTableAdapter.Connection != null))) {
-                    return this._inventoryTableAdapter.Connection;
-                }
                 return null;
             }
             set {
@@ -1373,9 +827,6 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._inventoryTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 return count;
             }
         }
@@ -1385,17 +836,8 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(EmpDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(EmpDBDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._inventoryTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Inventory.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._inventoryTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             return result;
         }
         
@@ -1404,16 +846,8 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(EmpDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(EmpDBDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._inventoryTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Inventory.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._inventoryTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             return result;
         }
         
@@ -1422,16 +856,8 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(EmpDBDataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(EmpDBDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._inventoryTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Inventory.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._inventoryTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             return result;
         }
         
@@ -1464,17 +890,12 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(EmpDBDataSet1 dataSet) {
+        public virtual int UpdateAll(EmpDBDataSet2 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
-            }
-            if (((this._inventoryTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._inventoryTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
-                        "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1508,15 +929,6 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._inventoryTableAdapter != null)) {
-                    revertConnections.Add(this._inventoryTableAdapter, this._inventoryTableAdapter.Connection);
-                    this._inventoryTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._inventoryTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._inventoryTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._inventoryTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._inventoryTableAdapter.Adapter);
-                    }
-                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1574,10 +986,6 @@ SELECT Report_Id, Title, frequency, BU_Owner, Cart_owner, Report_type FROM Inven
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
-                }
-                if ((this._inventoryTableAdapter != null)) {
-                    this._inventoryTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._inventoryTableAdapter]));
-                    this._inventoryTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

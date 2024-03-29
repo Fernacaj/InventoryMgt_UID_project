@@ -1,7 +1,7 @@
 ﻿
 namespace InventoryManagmentSystem
 {
-    partial class Form1
+    partial class LoginPage
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace InventoryManagmentSystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -180,6 +180,7 @@ namespace InventoryManagmentSystem
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(265, 38);
             this.Email.TabIndex = 3;
+            this.Email.TextChanged += new System.EventHandler(this.Email_TextChanged);
             // 
             // label3
             // 
@@ -213,7 +214,7 @@ namespace InventoryManagmentSystem
             this.panel1.Size = new System.Drawing.Size(327, 376);
             this.panel1.TabIndex = 4;
             // 
-            // Form1
+            // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -222,7 +223,7 @@ namespace InventoryManagmentSystem
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "LoginPage";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

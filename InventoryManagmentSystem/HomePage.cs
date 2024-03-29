@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace InventoryManagmentSystem
 {
     public partial class HomePage : Form
@@ -30,14 +31,14 @@ namespace InventoryManagmentSystem
         private void exitt_Click(object sender, EventArgs e)
         {
 
-            new Form1().Show();
+            new LoginPage().Show();
             this.Hide();
 
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new LoginPage().Show();
             this.Hide();
         }
 
@@ -82,6 +83,12 @@ namespace InventoryManagmentSystem
         {
             new Approvals().Show();
             this.Hide();
+        }
+
+        
+        private void label7_Click(object sender, EventArgs e)
+        {
+            label7.Text = "Hello";
         }
     }
 }
